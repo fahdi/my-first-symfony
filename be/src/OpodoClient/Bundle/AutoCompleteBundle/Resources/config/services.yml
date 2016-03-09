@@ -1,0 +1,4 @@
+services:
+#    opodo_client_bundle_auto_complete.example:
+#        class: OpodoClient\Bundle\AutoCompleteBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

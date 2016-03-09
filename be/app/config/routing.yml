@@ -1,0 +1,8 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+opodo_client_bundle_auto_complete:
+    resource: "@OpodoClientBundleAutoCompleteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
