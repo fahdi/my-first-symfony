@@ -26,7 +26,7 @@ class DefaultController extends Controller
         );*/
         //return $this->render('OpodoClientBundleAutoCompleteBundle:Default:index.html.twig');
 
-
+        // make a service for that
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -50,11 +50,7 @@ class DefaultController extends Controller
         if ($err) {
             echo "cURL Error #:" . $err;
         } else {
-            return new Response(
-                $response,
-                200,
-                array('Content-Type' => 'application/json')
-            );
+            return new JsonResponse($response);
         }
     }
 }
